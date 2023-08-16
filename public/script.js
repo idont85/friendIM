@@ -1,4 +1,5 @@
-const socket = io();
+const socket = io.connect('/'); // Connect to the same host as the front-end
+
 
 const messageInput = document.getElementById('messageInput');
 const sendButton = document.getElementById('sendButton');
